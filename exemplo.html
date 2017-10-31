@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Um super WebApp</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="sweetHelp.min.css">
+    <script src="sweetHelp.min.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            background: url(bg.jpg);
+            background-size: cover;
+        }
+        
+        #box {
+            position: absolute;
+            top: 60%;
+            left: 25%;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <input type="text"><button>Calcular</button>
+    </div>
+
+    <script>
+        swhe.add([{
+            texto: 'Insira na caixa uma\nequação matemática',
+            elemento: '#box',
+            posicao: 'top',
+        }, {
+            texto: 'Depois clique em calcular\ne veja o resultado',
+            elemento: '#box',
+            posicao: 'top',
+            start: false
+        }], 'calc');
+
+        swhe.mostrar('calc');
+    </script>
+</body>
+
+</html>
